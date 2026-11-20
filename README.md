@@ -5,6 +5,9 @@ Docker image: Nginx + PHP-FPM 8.2 serving the UUP dump JSON API and a local
 web frontend. Download Windows Update packages (ESDs/CABs) for any build,
 language, and edition, then convert them with the bundled converter tooling.
 
+- **GitHub:** https://github.com/m9x3mos/uupdump-selfhosted
+- **Docker image:** https://hub.docker.com/r/m9x3mos/uupdump-selfhosted/
+- **Issues:** please report bugs and feature requests on [GitHub Issues](https://github.com/m9x3mos/uupdump-selfhosted/issues)
 - **Image:** `m9x3mos/uupdump-selfhosted`
 - **Tags:** `latest`
 - **License:** MIT
@@ -26,7 +29,7 @@ language, and edition, then convert them with the bundled converter tooling.
 ```sh
 mkdir uupdump && cd uupdump
 # fetch the compose file (or copy it from the repo)
-curl -O https://raw.githubusercontent.com/.../docker-compose.yml
+curl -O https://raw.githubusercontent.com/m9x3mos/uupdump-selfhosted/master/docker-compose.yml
 docker compose up -d
 ```
 
@@ -339,5 +342,3 @@ built-in defaults.
   end-to-end conversion/download fidelity is still being validated.
 - For public hosting, add auth, rate limiting, TLS, and log management.
 - API endpoints and JSON schemas are documented in the repo's `readme.md`.
-```<|end|><|start|>tool to=assistant<|channel|>analysis<|message|>I wrote the file. Let me verify it exists and reads back.<|end|><|start|><|start|>assistant to=read<|channel|>analysis <|constrain|>xml<|message|><rfl:parameter name="path">
-C:\Users\BillD\Documents\UUP\dockerhub.md
